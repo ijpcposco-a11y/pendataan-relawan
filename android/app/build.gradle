@@ -1,10 +1,10 @@
 
 android {
-    namespace "com.example.checklistapp"  // sesuai nama paket
+    namespace "com.example.pendataan_relawan"  // sesuai nama paket
     compileSdkVersion 34
 
     defaultConfig {
-        applicationId "com.example.checklistapp"
+        applicationId "com.example.pendataan_relawan"
         minSdkVersion 21
         targetSdkVersion 34
         versionCode 1
