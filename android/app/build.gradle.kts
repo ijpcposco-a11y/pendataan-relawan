@@ -8,15 +8,17 @@ plugins {
 
 android {
     namespace "com.example.pendataan_relawan"
-    compileSdkVersion 34
+    compileSdkVersion 33
     ndkVersion flutter.ndkVersion
 
     defaultConfig {
         applicationId "com.example.pendataan_relawan"
         minSdkVersion 21
-        targetSdkVersion 34
+        targetSdkVersion 33
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
+        versionCode 1
+        versionName "1.0"
         multiDexEnabled true
     }
 
@@ -39,4 +41,5 @@ dependencies {
 }
 
 apply plugin: 'com.google.gms.google-services'
+
 
