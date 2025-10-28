@@ -1,5 +1,8 @@
-package com.example.pendataan_relawan
+
+package com.example.appname
 
 import io.flutter.embedding.android.FlutterActivity
 
-class MainActivity : FlutterActivity()
+class MainActivity: FlutterActivity() {
+}
+
