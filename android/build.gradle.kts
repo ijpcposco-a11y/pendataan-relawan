@@ -6,9 +6,14 @@ buildscript {
     }
 
     dependencies {
-        classpath "com.android.tools.build:gradle:8.1.0"
+        // Android Gradle Plugin terbaru yang stabil
+        classpath "com.android.tools.build:gradle:8.6.0"
+
+        // Kotlin plugin terbaru untuk AGP 8.6
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.24"
-        classpath "com.google.gms:google-services:4.4.2"
+
+        // Google Services terbaru (untuk Firebase)
+        classpath "com.google.gms:google-services:4.4.3"
     }
 }
 
@@ -27,5 +32,4 @@ subprojects {
 tasks.register("clean", Delete) {
     delete rootProject.buildDir
 }
-
 
