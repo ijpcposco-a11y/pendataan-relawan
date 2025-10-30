@@ -3,9 +3,10 @@
     package="com.example.pendataan_relawan">
 
     <application
-        android:label="Pendataan Relawan"
         android:name="${applicationName}"
+        android:label="Pendataan Relawan"
         android:icon="@mipmap/ic_launcher">
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -14,15 +15,26 @@
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:hardwareAccelerated="true"
             android:windowSoftInputMode="adjustResize">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+
+            <!-- Tambahan penting untuk embedding v2 -->
+            <meta-data
+                android:name="io.flutter.embedding.android.NormalTheme"
+                android:resource="@style/NormalTheme" />
+            <meta-data
+                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+                android:resource="@drawable/launch_background" />
         </activity>
+
+        <!-- Pastikan ini ada di bawah activity -->
         <meta-data
-            android:name="io.flutter.embedding.android.NormalTheme"
-            android:resource="@style/NormalTheme"
-            />
+            android:name="flutterEmbedding"
+            android:value="2" />
+
     </application>
 </manifest>
 
